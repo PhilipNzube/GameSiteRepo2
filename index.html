@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="./images/Icon.png"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<title>
+</title>
+<style>
+    @media only screen and (min-width:780px){
+        body{
+            background-color: rgba(15, 14, 14, 0);
+            overflow: hidden;
+            background:  rgba(15, 14, 14, 0) url("./images/BG.png");
+        }
+        #Cont{
+            display: none;
+           
+        }
+
+#BG{
+    position: relative;
+    bottom: 100px;
+    
+}
+
+        #Loader{
+            position: relative;
+            right:270px;
+            height:2000px;
+    width: 1900px;
+    background-color:rgba(15, 14, 14, 0);
+            display: block;
+            /*
+            background: url("./images/Loader.png") center 0 repeat;
+            */
+        }
+#TopBar{
+    position: relative;
+    top:-80px;
+    height:50px;
+    width:100%;
+    background-color:rgba(214, 25, 25, 0.322);
+    border: 1px solid rgba(0, 0, 0, 0.514);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+}
+#Sandwich{
+    position: relative;
+    top:10px;
+    left:20px;
+    color:black;
+}
+
+#SideBar{
+    position: relative;
+    top:-80px;
+    height:520px;
+    width:350px;
+    background-color:rgba(214, 25, 25, 0.322);
+    border: 1px solid rgba(0, 0, 0, 0.514);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+    transition: all 5s ease-in-out; 
+    display: none; 
+}
+
+#LOADTEXT{
+    position: relative;
+    top: 350px; 
+    right:50px; 
+    color:rgb(189, 33, 33);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+
+#Overlay{
+    position: relative;
+    top:-80px;
+    height:2000px;
+    width: 1900px;
+    background-color:rgba(15, 14, 14, 0.685);   
+}
+
+#LogoText{
+    color:rgb(189, 33, 33);
+    font-family:'Courier New', Courier, monospace;
+    position: relative;
+    bottom: 80px; 
+    left: 80px;
+}
+
+
+#Gallary{
+    position: relative;
+    top:150px;
+    left:70px;
+    box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+    border-radius: 5px;
+}
+
+#LArrow{
+    position: relative;
+    bottom:1890px; 
+    left:20px; 
+}
+
+
+#RArrow{
+    position: relative;
+    bottom:1950px; 
+    left:1300px; 
+}
+
+#Dot1{
+    position: relative;
+    bottom:1890px; 
+    left:530px; 
+    /*
+    background-color: rgb(189, 33, 33);  
+    */
+}
+
+#Dot2{
+    position: relative;
+    bottom:1890px; 
+    left:530px;   
+}
+
+#Dot3{
+    position: relative;
+    bottom:1890px; 
+    left:530px;   
+}
+
+#Dots{
+    position: relative;
+    left:100px;   
+}
+
+
+#Home{
+    color:grey;
+    position: relative;
+    bottom:38px; 
+    left:800px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#About{
+    color:grey;
+    position: relative;
+    bottom:78px; 
+    left:950px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Contact{
+    color:grey;
+    position: relative;
+    bottom:118px; 
+    left:1100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    color:grey;
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgb(189, 33, 33);
+}
+
+
+    }
+
+
+
+
+
+    @media only screen and (max-width:780px) {
+        body{
+            background-color: rgba(15, 14, 14, 0);
+            overflow: hidden;
+            background:  rgba(15, 14, 14, 0) url("./images/BG.png");
+        }
+        #Cont{
+            display: none;
+           
+        }
+
+#BG{
+    position: relative;
+    bottom: 100px;
+    
+}
+
+        #Loader{
+            position: relative;
+            right:650px;
+            height:2000px;
+    width: 1900px;
+    background-color:rgba(15, 14, 14, 0);
+            display: block;
+            /*
+            background: url("./images/Loader.png") center 0 repeat;
+            */
+        }
+#TopBar{
+    position: relative;
+    top:-80px;
+    height:50px;
+    width:100%;
+    background-color:rgba(214, 25, 25, 0.322);
+    border: 1px solid rgba(0, 0, 0, 0.514);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+}
+#Sandwich{
+    position: relative;
+    top:10px;
+    left:20px;
+    color:black;
+}
+
+#SideBar{
+    position: relative;
+    top:-80px;
+    height:465px;
+    width:350px;
+    background-color:rgba(214, 25, 25, 0.322);
+    border: 1px solid rgba(0, 0, 0, 0.514);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+    transition: all 5s ease-in-out; 
+    display: none; 
+}
+
+#LOADTEXT{
+    position: relative;
+    top: 350px; 
+    right:50px; 
+    color:rgb(189, 33, 33);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+
+#Overlay{
+    position: relative;
+    top:-80px;
+    height:2000px;
+    width: 100%;
+    background-color:rgba(15, 14, 14, 0.685);   
+}
+
+#LogoText{
+    color:rgb(189, 33, 33);
+    font-family:'Courier New', Courier, monospace;
+    position: relative;
+    bottom: 80px; 
+    left: 80px;
+}
+
+
+#Gallary{
+    position: relative;
+    top:150px;
+    left:40px;
+    box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+    border-radius: 5px;
+    height: 80px;
+    width:80px;
+}
+
+#LArrow{
+    position: relative;
+    bottom:1920px; 
+    left:0px; 
+}
+
+
+#RArrow{
+    position: relative;
+    bottom:1985px; 
+    left:455px; 
+}
+
+#Dot1{
+    position: relative;
+    bottom:1890px; 
+    left:530px; 
+    /*
+    background-color: rgb(189, 33, 33);  
+    */
+}
+
+#Dot2{
+    position: relative;
+    bottom:1890px; 
+    left:530px;   
+}
+
+#Dot3{
+    position: relative;
+    bottom:1890px; 
+    left:530px;   
+}
+
+#Dots{
+    position: relative;
+    right:320px;   
+}
+
+
+#Home{
+    color:grey;
+    position: relative;
+    bottom:38px; 
+    left:800px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#About{
+    color:grey;
+    position: relative;
+    bottom:70px; 
+    left:900px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Contact{
+    color:grey;
+    position: relative;
+    bottom:100px; 
+    left:1000px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#Links{
+    position: relative;
+    right:600px;
+    font-size: 12px;
+    top:5px;
+}
+
+
+a{
+    text-decoration: none;
+    color:grey;
+}
+
+a:hover{
+    color:rgb(189, 33, 33);
+}
+
+}
+</style>
+
+<script>
+    var CSWClickNo=0;
+    var SANDWICH=document.getElementById("Sandwich");
+    window.onload=Loading;
+    function Loading(){
+        setTimeout(function(){
+            document.getElementById("Loader").style.display="none"; 
+            document.getElementById("Cont").style.display="block"; 
+        },1000);
+          
+    }
+    function ClickOnSandWich(){
+        if(CSWClickNo==0){
+            console.log("Clicked");
+        document.getElementById("SW").src="./images/Close.png";
+        document.getElementById("SideBar").style.display="block";
+        CSWClickNo++;
+        }else
+        if(CSWClickNo==1){
+            document.getElementById("SW").src="./images/Sandwich.png";
+            document.getElementById("SideBar").style.display="none";
+            CSWClickNo=0;
+        }   
+    }
+    </script>
+</head>
+<body>
+    <div id="Loader"><center><b id="LOADTEXT">LOADING...</b><!---<img src="./images/Loader.png"  width="500px" height="500px"/>---></center></div>
+    <div id="Cont">
+       <div id="Logo"> <img src="./images/Immunocalypse-icon.png"  width="80px" height="80px"/><div id="LogoText"><h1>IMMUNOWRLD</h1></div></div> 
+    <div id="TopBar"><div id="Sandwich" onclick="ClickOnSandWich()" ><img id="SW" src="./images/Sandwich.png" height="30px" width="40px"/></div>
+    <div id="Links">
+    <h3 id="Home"><a href="">HOME</a></h3>
+    <h3 id="About"><a href="">ABOUT</a></h3>
+    <h3 id="Contact"><a href="">CONTACT</a></h3>
+    </div>
+</div>
+    <div id="SideBar"></div>
+    <div id="Overlay"><img id="Gallary" src="./images/Gallary.png"  width="200px" height="150px"/> 
+        <img id="Gallary" src="./images/Gallary2.png"  width="200px" height="150px"/>
+        <img id="Gallary" src="./images/Gallary3.png"  width="200px" height="150px"/>
+        <img id="Gallary" src="./images/Gallary4.png"  width="200px" height="150px"/>
+        <img id="Gallary" src="./images/Gallary5.png"  width="200px" height="150px"/>
+        <img id="Gallary" src="./images/Gallary6.png"  width="200px" height="150px"/>
+</div>
+    <div id="LArrow"><img src="./images/LeftArrow.png"  width="40px" height="60px"/></div>
+    <div id="RArrow"><img src="./images/RightArrow.png"  width="40px" height="60px"/></div>
+    <div id="Dots"><img id="Dot1" src="./images/Dot.png"  width="20px" height="20px"/>
+        <img id="Dot2" src="./images/Dot.png"  width="20px" height="20px"/>
+        <img id="Dot3" src="./images/Dot.png"  width="20px" height="20px"/>
+    </div>
+    </div>
+    
+</body>
+</html>
