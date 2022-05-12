@@ -7,15 +7,22 @@
 IMMUNOWRLD
 </title>
 <style>
-    @media only screen and (min-width:780px){
+    @media only screen and (min-width:1080px){
         body{
             background-color: rgba(15, 14, 14, 0);
-            overflow: hidden;
             background:  rgba(15, 14, 14, 0) url("./images/BG.png");
+            overflow-y: scroll;
+            overflow-x: hidden;
         }
         #Cont{
             display: none;
            
+        }
+
+        #MainCont{
+            width:100%;
+            min-width: 500px;
+            margin: auto;
         }
 
 #BG{
@@ -77,9 +84,10 @@ IMMUNOWRLD
 #Overlay{
     position: relative;
     top:-80px;
-    height:2000px;
-    width: 1900px;
-    background-color:rgba(15, 14, 14, 0.685);   
+    height:420px;
+    width: 100%;
+    background-color:rgba(15, 14, 14, 0.685);
+    margin:auto;   
 }
 
 #LogoText{
@@ -92,11 +100,19 @@ IMMUNOWRLD
 
 
 #Gallary{
-    position: relative;
-    top:150px;
-    left:70px;
     box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
     border-radius: 5px;
+    position: relative;
+    top:50px;
+    left:150px;
+    height: 180px;
+    width:330px;
+}
+
+#Gallary:hover{
+    box-shadow: rgba(0, 0, 0, 0.616) 10px 10px;
+    border-radius: 5px;
+    z-index:1;
 }
 
 #LArrow{
@@ -172,6 +188,127 @@ a:hover{
     color:rgb(189, 33, 33);
 }
 
+#NR{
+    position: relative;
+    top:20px;
+    left:20px;
+    border:1px solid grey;
+    border-radius: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 30px;
+}
+
+
+#Divide1{
+    position: relative;
+    top:-30px; 
+    font-size: 25px;  
+}
+
+
+.ComingSoon{
+    color: grey;
+    opacity: 0.1;
+}
+
+.ComingSoon2{
+    color: grey;
+    opacity: 0.1;
+}
+
+.ComingSoon3{
+    color: grey;
+    opacity: 0.1;
+}
+
+.ComingSoon4{
+    color: grey;
+    opacity: 0.1;
+}
+
+.ComingSoon5{
+    color: grey;
+    opacity: 0.1;
+}
+
+#CSText{
+    position: relative;
+    bottom: 250px;
+    left: 520px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#CSText2{
+    position: relative;
+    bottom: 310px;
+    left: 850px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#CSText3{
+    position: relative;
+    bottom: 190px;
+    left: 190px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#CSText4{
+    position: relative;
+    bottom: 250px;
+    left: 520px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#CSText5{
+    position: relative;
+    bottom: 310px;
+    left: 850px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#Footer{
+    height: 70px;
+    width:100%;
+    background-color:rgba(214, 25, 25, 0.322);
+    border: 1px solid rgba(0, 0, 0, 0.514);
+    box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+    position: relative;
+    bottom: 260px;
+}
+#Date{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+
+#Game1{
+    display: none;
+    position:absolute;
+transition:opacity 500ms;
+bottom: 0px;
+width: 100%;
+border-radius: 10px;
+background:#000 transparent;
+}
+
+#Game1About{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    color:rgba(250, 6, 6, 0.76);  
+}
+
+#Close{
+    position: relative;
+    bottom: 350px;
+    left:1300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    color:rgba(250, 6, 6, 0.76); 
+    font-size: 20px; 
+}
+
+#Game1Img{
+    margin-left: 130px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: #000 3px 3px;
+}
 
     }
 
@@ -179,16 +316,26 @@ a:hover{
 
 
 
-    @media only screen and (max-width:780px) {
+
+    
+
+
+    @media only screen and (max-width:1080px) {
         body{
             background-color: rgba(15, 14, 14, 0);
-            overflow: hidden;
-            position: fixed;
-            background:  rgba(15, 14, 14, 0) url("./images/BG.png");
+            overflow-y: scroll;
+            overflow-x: hidden;
+            background:  #000 url("./images/BG.png") center 0 no-repeat;
         }
         #Cont{
             display: none;
            
+        }
+        #MainCont{
+            width:90%;
+            min-width: 500px;
+            margin: auto;
+            
         }
 
 #BG{
@@ -250,7 +397,7 @@ a:hover{
 #Overlay{
     position: relative;
     top:-80px;
-    height:2000px;
+    height:1150px;
     width: 100%;
     background-color:rgba(15, 14, 14, 0.685);   
 }
@@ -266,18 +413,28 @@ a:hover{
 
 #Gallary{
     position: relative;
-    top:100px;
-    left:18px;
+    top:50px;
+    left:50px;
     box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
     border-radius: 5px;
-    height: 80px;
-    width:80px;
+    height: 180px;
+    width:80%;
+}
+
+#Gallary:hover{
+    position: relative;
+    left:35px;
+    box-shadow: rgba(0, 0, 0, 0.616) 10px 10px;
+    border-radius: 5px;
+    height: 200px;
+    width:85%;
 }
 
 #LArrow{
     position: relative;
     bottom:1920px; 
     left:0px; 
+    display:none;
 }
 
 
@@ -285,6 +442,7 @@ a:hover{
     position: relative;
     bottom:1985px; 
     left:310px; 
+    display:none;
 }
 
 #Dot1{
@@ -294,12 +452,14 @@ a:hover{
     /*
     background-color: rgb(189, 33, 33);  
     */
+    display:none;
 }
 
 #Dot2{
     position: relative;
     bottom:1890px; 
-    left:530px;   
+    left:530px;
+    display:none;   
 }
 
 #Dot3{
@@ -310,7 +470,8 @@ a:hover{
 
 #Dots{
     position: relative;
-    right:390px;   
+    right:390px;  
+    display:none; 
 }
 
 
@@ -356,6 +517,123 @@ a:hover{
     color:rgb(189, 33, 33);
 }
 
+
+#NR{
+    position: relative;
+    top:20px;
+    left:20px;
+    border:1px solid grey;
+    border-radius: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 30px;
+}
+
+
+#Divide1{
+    position: relative;
+    top:-30px;   
+    font-size: 25px;
+}
+
+.ComingSoon{
+    color: grey;
+    opacity: 0.1;
+}
+
+.ComingSoon2{
+    color: grey;
+    opacity: 0.1;
+}
+
+.ComingSoon3{
+    color: grey;
+    opacity: 0.1;
+}
+
+.ComingSoon4{
+    color: grey;
+    opacity: 0.1;
+}
+
+.ComingSoon5{
+    color: grey;
+    opacity: 0.1;
+}
+
+#CSText{
+    position: relative;
+    bottom: 820px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+#CSText2{
+    position: relative;
+    bottom: 700px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#CSText3{
+    position: relative;
+    bottom: 570px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#CSText4{
+    position: relative;
+    bottom: 440px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#CSText5{
+    position: relative;
+    bottom: 310px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#Footer{
+    height: 70px;
+    width:100%;
+    background-color:rgba(214, 25, 25, 0.322);
+    border: 1px solid rgba(0, 0, 0, 0.514);
+    box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+    position: relative;
+    bottom: 270px;
+}
+
+#Date{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+
+
+#Game1{
+    display: none;
+    position:absolute;
+transition:opacity 500ms;
+bottom: 730px;
+width: 100%;
+border-radius: 10px;
+}
+
+#Game1About{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    color:rgba(250, 6, 6, 0.76);  
+}
+
+#Close{
+    position: relative;
+    bottom: 350px;
+    left:440px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    color:rgba(250, 6, 6, 0.76); 
+    font-size: 20px; 
+}
+
 }
 </style>
 
@@ -375,19 +653,32 @@ a:hover{
             console.log("Clicked");
         document.getElementById("SW").src="./images/Close.png";
         document.getElementById("SideBar").style.display="block";
+        document.getElementById("Overlay").style.display="none";
         CSWClickNo++;
         }else
         if(CSWClickNo==1){
             document.getElementById("SW").src="./images/Sandwich.png";
             document.getElementById("SideBar").style.display="none";
+            document.getElementById("Overlay").style.display="block";
             CSWClickNo=0;
-        }   
+        }  
     }
+
+    function OpenGame1(){
+            document.getElementById("Game1").style.display="block"; 
+            document.body.style.overflowY="hidden"; 
+        }
+
+        function CloseGame1(){
+            document.body.style.overflowY="scroll";
+            document.getElementById("Game1").style.display="none"; 
+        }
     </script>
 </head>
 <body>
     <div id="Loader"><center><b id="LOADTEXT">LOADING...</b><!---<img src="./images/Loader.png"  width="500px" height="500px"/>---></center></div>
     <div id="Cont">
+        <div id="MainCont">
        <div id="Logo"> <img src="./images/Immunocalypse-icon.png"  width="80px" height="80px"/><div id="LogoText"><h1>IMMUNOWRLD</h1></div></div> 
     <div id="TopBar"><div id="Sandwich" onclick="ClickOnSandWich()" ><img id="SW" src="./images/Sandwich.png" height="30px" width="40px"/></div>
     <div id="Links">
@@ -396,19 +687,29 @@ a:hover{
     <h3 id="Contact"><a href="">CONTACT</a></h3>
     </div>
 </div>
-    <div id="SideBar"></div>
-    <div id="Overlay"><img id="Gallary" src="./images/Gallary.png"  width="200px" height="150px"/> 
-        <img id="Gallary" src="./images/Gallary2.png"  width="200px" height="150px"/>
-        <img id="Gallary" src="./images/Gallary3.png"  width="200px" height="150px"/>
-        <img id="Gallary" src="./images/Gallary4.png"  width="200px" height="150px"/>
-        <img id="Gallary" src="./images/Gallary5.png"  width="200px" height="150px"/>
-        <img id="Gallary" src="./images/Gallary6.png"  width="200px" height="150px"/>
+    <div id="SideBar"><a id="NR" href="NextRelease.html"><b>NEXT RELEASE</b></a><br/>
+        <div id="Divide1"><h1><b>---------------------</b></h1></div></div>
+    <div id="Overlay"><img class="Released" id="Gallary" onclick="OpenGame1()" src="./images/GameName.png"  width="200px" height="150px"/> 
+        <img class="ComingSoon" id="Gallary" src="./images/Gallary.png"  width="200px" height="150px"/>
+        <img class="ComingSoon2" id="Gallary" src="./images/Gallary2.png"  width="200px" height="150px"/>
+        <img class="ComingSoon3" id="Gallary" src="./images/Gallary3.png"  width="200px" height="150px"/>
+        <img class="ComingSoon4" id="Gallary" src="./images/Gallary4.png"  width="200px" height="150px"/>
+        <img class="ComingSoon5" id="Gallary" src="./images/Gallary5.png"  width="200px" height="150px"/>
+        <h1 id="CSText">COMING SOON</h1>
+        <h1 id="CSText2">COMING SOON</h1>
+        <h1 id="CSText3">COMING SOON</h1>
+        <h1 id="CSText4">COMING SOON</h1>
+        <h1 id="CSText5">COMING SOON</h1>
+        <div id="Game1"><img id="Game1Img" src="./images/GameName.png"  width="100%" height="300px"/><p id="Game1About"><b>Immunocalypse is an FPS game</b></p><p onclick="CloseGame1()" id="Close"><b>X</b></p></div>
+        <div id="Footer"><p id="Date"><b>©2020 - 2022</b></p></div>
 </div>
-    <div id="LArrow"><img src="./images/LeftArrow.png"  width="40px" height="60px"/></div>
+
+    <!---<div id="LArrow"><img src="./images/LeftArrow.png"  width="40px" height="60px"/></div>
     <div id="RArrow"><img src="./images/RightArrow.png"  width="40px" height="60px"/></div>
     <div id="Dots"><img id="Dot1" src="./images/Dot.png"  width="20px" height="20px"/>
         <img id="Dot2" src="./images/Dot.png"  width="20px" height="20px"/>
         <img id="Dot3" src="./images/Dot.png"  width="20px" height="20px"/>
+    </div>--->
     </div>
     </div>
     
