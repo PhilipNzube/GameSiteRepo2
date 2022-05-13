@@ -310,6 +310,56 @@ background:#000 transparent;
     box-shadow: #000 3px 3px;
 }
 
+
+
+#AboutPanel{
+    display: none;
+    position: relative;
+    top:-470px;
+    height:320px;
+    width: 100%;
+    background-color:rgba(15, 14, 14, 0.904);
+    margin:auto; 
+    z-index: 1;  
+}
+
+#CloseAbout{
+    position: relative;
+    bottom: -30px;
+    left:1300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    color:rgba(250, 6, 6, 0.76); 
+    font-size: 20px; 
+}
+
+
+#ContactPanel{
+    display: none;
+    position: relative;
+    top:-470px;
+    height:320px;
+    width: 100%;
+    background-color:rgba(15, 14, 14, 0.904);
+    margin:auto; 
+    z-index: 1;  
+}
+
+#CloseContact{
+    position: relative;
+    bottom: -20px;
+    left:1300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    color:rgba(250, 6, 6, 0.76); 
+    font-size: 20px; 
+}
+
+#ContactContent{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    color:rgba(250, 6, 6, 0.76); 
+    font-size: 20px; 
+    text-align: center;
+}
+
     }
 
 
@@ -634,6 +684,54 @@ border-radius: 10px;
     font-size: 20px; 
 }
 
+#AboutPanel{
+    display: none;
+    position: relative;
+    bottom: 1300px;
+    height:350px;
+    width: 100%;
+    background-color:rgba(15, 14, 14, 0.904);
+    margin:auto; 
+    z-index: 1;  
+}
+
+#CloseAbout{
+    position: absolute;
+    bottom: 600px;
+    left:440px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    color:rgba(250, 6, 6, 0.76); 
+    font-size: 20px; 
+}
+
+
+#ContactPanel{
+    display: none;
+    position: relative;
+    bottom: 1200px;
+    height:350px;
+    width: 100%;
+    background-color:rgba(15, 14, 14, 0.904);
+    margin:auto; 
+    z-index: 1;  
+}
+
+#CloseContact{
+    position: absolute;
+    bottom: 600px;
+    left:440px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    color:rgba(250, 6, 6, 0.76); 
+    font-size: 20px; 
+}
+
+#ContactContent{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    color:rgba(250, 6, 6, 0.76); 
+    font-size: 20px; 
+    text-align: center;
+}
+
 }
 </style>
 
@@ -673,6 +771,29 @@ border-radius: 10px;
             document.body.style.overflowY="scroll";
             document.getElementById("Game1").style.display="none"; 
         }
+
+
+        function OpenAbout(){
+            document.getElementById("AboutPanel").style.display="block"; 
+            document.body.style.overflowY="hidden"; 
+        }
+
+        function CloseAbout(){
+            document.body.style.overflowY="scroll";
+            document.getElementById("AboutPanel").style.display="none"; 
+        }
+
+
+
+        function OpenContact(){
+            document.getElementById("ContactPanel").style.display="block"; 
+            document.body.style.overflowY="hidden"; 
+        }
+
+        function CloseContact(){
+            document.body.style.overflowY="scroll";
+            document.getElementById("ContactPanel").style.display="none"; 
+        }
     </script>
 </head>
 <body>
@@ -683,8 +804,8 @@ border-radius: 10px;
     <div id="TopBar"><div id="Sandwich" onclick="ClickOnSandWich()" ><img id="SW" src="./images/Sandwich.png" height="30px" width="40px"/></div>
     <div id="Links">
     <h3 id="Home"><a href="">HOME</a></h3>
-    <h3 id="About"><a href="">ABOUT</a></h3>
-    <h3 id="Contact"><a href="">CONTACT</a></h3>
+    <h3 id="About"><a onclick="OpenAbout()">ABOUT</a></h3>
+    <h3 id="Contact"><a onclick="OpenContact()">CONTACT</a></h3>
     </div>
 </div>
     <div id="SideBar"><a id="NR" href="NextRelease.html"><b>NEXT RELEASE</b></a><br/>
@@ -703,7 +824,8 @@ border-radius: 10px;
         <div id="Game1"><img id="Game1Img" src="./images/GameName.png"  width="100%" height="300px"/><p id="Game1About"><b>Immunocalypse is an FPS game</b></p><p onclick="CloseGame1()" id="Close"><b>X</b></p></div>
         <div id="Footer"><p id="Date"><b>©2020 - 2022</b></p></div>
 </div>
-
+<div id="ContactPanel"><p onclick="CloseContact()" id="CloseContact"><b>X</b></p><p id="ContactContent">Phone No: 09016482578<br/><br/><b>SOCIAL MEDIA:</b><br/>Twitter: @Philip_nzube<br/><br/>Whatsapp: 09029751915<br/><br/>Instagram: philinstadev<br/><br/>Facebook: Philip Nzubechukwu</p></div>
+<div id="AboutPanel"><p onclick="CloseAbout()" id="CloseAbout"><b>X</b></p></div>
     <!---<div id="LArrow"><img src="./images/LeftArrow.png"  width="40px" height="60px"/></div>
     <div id="RArrow"><img src="./images/RightArrow.png"  width="40px" height="60px"/></div>
     <div id="Dots"><img id="Dot1" src="./images/Dot.png"  width="20px" height="20px"/>
