@@ -1888,7 +1888,7 @@ var Expired30=localStorage.setItem("Expired30", false);
 console.log("FirstTime");
 document.getElementById("GenerateButBG").style.display="block";
 }
- typeWriter();
+ //typeWriter();
   LoadBox();
  }
 </script>
@@ -2004,6 +2004,7 @@ if(AID.value==ActivationCode){
 if(UID.value!=""){
   localStorage.setItem("FirstTime", false);
 document.querySelector(".overlay").style.display="none";
+typeWriter();
 console.log("LunchApp");
 }else if(UID.value==""){ 
 document.getElementById("Warning").innerHTML="No UserName!!Pls Input One";
