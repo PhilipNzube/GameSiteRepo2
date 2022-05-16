@@ -10,10 +10,12 @@ IMMUNOWRLD
     @media only screen and (min-width:1080px){
         body{
             background-color: rgba(15, 14, 14, 0);
-            background:  rgba(15, 14, 14, 0) url("./images/BG.png");
+            background:  rgba(15, 14, 14, 0) url("./images/BG6.png");
             overflow-y: scroll;
             overflow-x: hidden;
         }
+
+
         #Cont{
             display: none;
            
@@ -24,6 +26,7 @@ IMMUNOWRLD
             min-width: 500px;
             margin: auto;
         }
+        
 
 #BG{
     position: relative;
@@ -57,6 +60,7 @@ IMMUNOWRLD
     top:10px;
     left:20px;
     color:black;
+    cursor:pointer;
 }
 
 #SideBar{
@@ -67,7 +71,7 @@ IMMUNOWRLD
     background-color:rgba(214, 25, 25, 0.322);
     border: 1px solid rgba(0, 0, 0, 0.514);
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+    box-shadow: rgba(0, 0, 0, 0.616) 2px 2px;
     transition: all 5s ease-in-out; 
     display: none; 
 }
@@ -156,11 +160,13 @@ IMMUNOWRLD
 
 
 #Home{
-    color:grey;
+    color:rgb(189, 33, 33);
     position: relative;
     bottom:38px; 
     left:800px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: grey underline 3px solid;
+    cursor:default;
 }
 
 #About{
@@ -169,14 +175,16 @@ IMMUNOWRLD
     bottom:78px; 
     left:950px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor:pointer;
 }
 
 #Contact{
     color:grey;
     position: relative;
-    bottom:118px; 
+    bottom:119px; 
     left:1100px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor:pointer;
 }
 
 a{
@@ -201,8 +209,24 @@ a:hover{
 
 #Divide1{
     position: relative;
-    top:-30px; 
-    font-size: 25px;  
+    top:30px; 
+    height:30px;
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.322);
+    border: 1px solid rgba(0, 0, 0, 0.514);
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.616) 1px 1px;   
+}
+
+#Divide2{
+    position: relative;
+    top:230px; 
+    height:30px;
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.322);
+    border: 1px solid rgba(0, 0, 0, 0.514);
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.616) 1px 1px;  
 }
 
 
@@ -279,21 +303,29 @@ a:hover{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
 }
 
+
+.Released{
+    cursor:pointer;
+}
+
 #Game1{
     display: none;
     position:absolute;
 transition:opacity 500ms;
-bottom: 0px;
+bottom: 50px;
 width: 100%;
 border-radius: 10px;
 background:#000 transparent;
 }
 
 #Game1About{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
-    color:rgba(250, 6, 6, 0.76);  
+    font-family:Courier;
+    color:rgba(247, 242, 242, 0.712);   
+    position: relative;
+    bottom: 50px;
+    text-align: center;
 }
-
+/*
 #Close{
     position: relative;
     bottom: 350px;
@@ -301,13 +333,17 @@ background:#000 transparent;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
     color:rgba(250, 6, 6, 0.76); 
     font-size: 20px; 
+    cursor:pointer;
 }
-
+*/
 #Game1Img{
-    margin-left: 130px;
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: #000 3px 3px;
+    position: relative;
+    bottom: 180px;
+    margin-left: 0px;
+    height: 300px;
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: rgba(158, 153, 153, 0.075) 3px 3px;
 }
 
 
@@ -315,7 +351,7 @@ background:#000 transparent;
 #AboutPanel{
     display: none;
     position: relative;
-    top:-470px;
+    top:-450px;
     height:320px;
     width: 100%;
     background-color:rgba(15, 14, 14, 0.904);
@@ -323,6 +359,13 @@ background:#000 transparent;
     z-index: 1;  
 }
 
+#AboutContent{
+    font-family:Courier;
+    color:rgba(247, 242, 242, 0.712); 
+    font-size: 20px; 
+    text-align: center;
+}
+/*
 #CloseAbout{
     position: relative;
     bottom: -30px;
@@ -330,8 +373,9 @@ background:#000 transparent;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
     color:rgba(250, 6, 6, 0.76); 
     font-size: 20px; 
+    cursor:pointer;
 }
-
+*/
 
 #ContactPanel{
     display: none;
@@ -343,22 +387,50 @@ background:#000 transparent;
     margin:auto; 
     z-index: 1;  
 }
-
+/*
 #CloseContact{
     position: relative;
     bottom: -20px;
     left:1300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
     color:rgba(250, 6, 6, 0.76); 
-    font-size: 20px; 
+    font-size: 20px;
+    cursor:pointer; 
 }
-
+*/
 #ContactContent{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
-    color:rgba(250, 6, 6, 0.76); 
+    font-family:Courier;
+    color:rgba(247, 242, 242, 0.712);  
     font-size: 20px; 
     text-align: center;
 }
+
+#RPI{
+    display: none;
+    position: relative;
+    bottom: 600px;   
+}
+
+#Socials{
+    position: relative;
+    top: 300px;      
+}
+
+#Insta{
+    position: relative;
+    left: 20px;   
+}
+
+#Twitter{
+    position: relative;
+    left: 40px;   
+}
+
+#LinkedIn{
+    position: relative;
+    left: 60px;   
+}
+
 
     }
 
@@ -375,7 +447,7 @@ background:#000 transparent;
             background-color: rgba(15, 14, 14, 0);
             overflow-y: scroll;
             overflow-x: hidden;
-            background:  #000 url("./images/BG.png") center 0 no-repeat;
+            background:  #000 url("./images/BG6.png") center 0 no-repeat;
         }
         #Cont{
             display: none;
@@ -420,6 +492,7 @@ background:#000 transparent;
     top:10px;
     left:20px;
     color:black;
+    cursor:pointer;
 }
 
 #SideBar{
@@ -526,27 +599,31 @@ background:#000 transparent;
 
 
 #Home{
-    color:grey;
+    color:rgb(189, 33, 33);
     position: relative;
     bottom:35px; 
     left:720px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: grey underline 3px solid;
+    cursor:default;
 }
 
 #About{
     color:grey;
     position: relative;
-    bottom:65px; 
+    bottom:62px; 
     left:800px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor:pointer;
 }
 
 #Contact{
     color:grey;
     position: relative;
-    bottom:96px; 
-    left:880px;
+    bottom:90px; 
+    left:890px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor:pointer;
 }
 
 
@@ -581,8 +658,24 @@ a:hover{
 
 #Divide1{
     position: relative;
-    top:-30px;   
-    font-size: 25px;
+    top:30px; 
+    height:30px;
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.322);
+    border: 1px solid rgba(0, 0, 0, 0.514);
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.616) 1px 1px;   
+}
+
+#Divide2{
+    position: relative;
+    top:230px; 
+    height:30px;
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.322);
+    border: 1px solid rgba(0, 0, 0, 0.514);
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.616) 1px 1px;  
 }
 
 .ComingSoon{
@@ -661,20 +754,39 @@ a:hover{
 }
 
 
+.Released{
+    cursor:pointer;
+}
+
 #Game1{
+    position: relative;
+    bottom: 100px;
     display: none;
     position:absolute;
 transition:opacity 500ms;
-bottom: 730px;
 width: 100%;
 border-radius: 10px;
+z-index: 1;
 }
 
 #Game1About{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
-    color:rgba(250, 6, 6, 0.76);  
+    font-family:Courier;
+    color:rgba(247, 242, 242, 0.712);  
+    position: relative;
+    bottom: -50px; 
+    text-align: center;
 }
 
+
+#Game1Img{
+    border-radius: 2px;
+    box-shadow: #000 3px 3px;
+    position: relative;
+    bottom: -50px;
+    left:-20px;
+    width: 100%;
+}
+/*
 #Close{
     position: relative;
     bottom: 350px;
@@ -683,11 +795,11 @@ border-radius: 10px;
     color:rgba(250, 6, 6, 0.76); 
     font-size: 20px; 
 }
-
+*/
 #AboutPanel{
     display: none;
     position: relative;
-    bottom: 1300px;
+    bottom: 1180px;
     height:350px;
     width: 100%;
     background-color:rgba(15, 14, 14, 0.904);
@@ -695,15 +807,477 @@ border-radius: 10px;
     z-index: 1;  
 }
 
+#AboutContent{
+    font-family:Courier;
+    color:rgba(247, 242, 242, 0.712); 
+    font-size: 20px; 
+    text-align: center;
+}
+/*
 #CloseAbout{
     position: absolute;
-    bottom: 600px;
-    left:440px;
+    bottom: 350px;
+    left:450px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
     color:rgba(250, 6, 6, 0.76); 
     font-size: 20px; 
 }
+*/
 
+#ContactPanel{
+    display: none;
+    position: relative;
+    bottom: 1200px;
+    height:350px;
+    width: 100%;
+    background-color:rgba(15, 14, 14, 0.904);
+    margin:auto; 
+    z-index: 1;  
+}
+/*
+#CloseContact{
+    position: absolute;
+    bottom: 350px;
+    left:450px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    color:rgba(250, 6, 6, 0.76); 
+    font-size: 20px; 
+}
+*/
+#ContactContent{
+    font-family:Courier;
+    color:rgba(247, 242, 242, 0.712); 
+    font-size: 20px; 
+    text-align: center;
+}
+
+#RPI{
+    display: none;
+    position: relative;
+    bottom: 500px;   
+}
+
+
+#Socials{
+    position: relative;
+    top: 270px;      
+}
+
+#Insta{
+    position: relative;
+    left: 20px;   
+}
+
+#Twitter{
+    position: relative;
+    left: 40px;   
+}
+
+#LinkedIn{
+    position: relative;
+    left: 60px;   
+}
+
+
+}
+
+
+
+ @media only screen and (max-width:480px) {
+        body{
+            background-color: rgba(15, 14, 14, 0);
+            overflow-y: scroll;
+            overflow-x: hidden;
+            background:  #000 url("./images/BG6.png") center 0 no-repeat;
+        }
+        #Cont{
+            display: none;
+           
+        }
+        #MainCont{
+            width:90%;
+            min-width: 200px;
+            margin: auto;
+            
+        }
+
+#BG{
+    position: relative;
+    bottom: 100px;
+    
+}
+
+        #Loader{
+            position: relative;
+            right:650px;
+            height:2000px;
+    width: 1900px;
+    background-color:rgba(15, 14, 14, 0);
+            display: block;
+            /*
+            background: url("./images/Loader.png") center 0 repeat;
+            */
+        }
+#TopBar{
+    position: relative;
+    top:-80px;
+    height:50px;
+    width:100%;
+    background-color:rgba(214, 25, 25, 0.322);
+    border: 1px solid rgba(0, 0, 0, 0.514);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+}
+#Sandwich{
+    position: relative;
+    top:10px;
+    left:20px;
+    color:black;
+    cursor:pointer;
+}
+
+#SideBar{
+    position: relative;
+    top:-80px;
+    height:465px;
+    width:250px;
+    background-color:rgba(214, 25, 25, 0.322);
+    border: 1px solid rgba(0, 0, 0, 0.514);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+    transition: all 5s ease-in-out; 
+    display: none; 
+}
+
+#LOADTEXT{
+    position: relative;
+    top: 300px; 
+    right:100px; 
+    color:rgb(189, 33, 33);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+
+#Overlay{
+    position: relative;
+    top:-80px;
+    height:1150px;
+    width: 100%;
+    background-color:rgba(15, 14, 14, 0.685);   
+}
+
+#LogoText{
+    color:rgb(189, 33, 33);
+    font-family:'Courier New', Courier, monospace;
+    position: relative;
+    bottom: 80px; 
+    left: 80px;
+}
+
+
+#Gallary{
+    position: relative;
+    top:50px;
+    left:28px;
+    box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+    border-radius: 5px;
+    height: 180px;
+    width:80%;
+}
+
+#Gallary:hover{
+    position: relative;
+    left:20px;
+    box-shadow: rgba(0, 0, 0, 0.616) 10px 10px;
+    border-radius: 5px;
+    height: 200px;
+    width:85%;
+}
+
+#LArrow{
+    position: relative;
+    bottom:1920px; 
+    left:0px; 
+    display:none;
+}
+
+
+#RArrow{
+    position: relative;
+    bottom:1985px; 
+    left:310px; 
+    display:none;
+}
+
+#Dot1{
+    position: relative;
+    bottom:1890px; 
+    left:530px; 
+    /*
+    background-color: rgb(189, 33, 33);  
+    */
+    display:none;
+}
+
+#Dot2{
+    position: relative;
+    bottom:1890px; 
+    left:530px;
+    display:none;   
+}
+
+#Dot3{
+    position: relative;
+    bottom:1890px; 
+    left:530px;   
+}
+
+#Dots{
+    position: relative;
+    right:390px;  
+    display:none; 
+}
+
+
+#Home{
+    color:rgb(189, 33, 33);
+    position: relative;
+    bottom:35px; 
+    left:670px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    text-decoration: grey underline 3px solid;
+    cursor:default;
+}
+
+#About{
+    color:grey;
+    position: relative;
+    bottom:62px; 
+    left:730px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    cursor:pointer;
+}
+
+#Contact{
+    color:grey;
+    position: relative;
+    bottom:90px; 
+    left:790px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    cursor:pointer;
+}
+
+
+#Links{
+    position: relative;
+    right:600px;
+    font-size: 12px;
+    top:5px;
+}
+
+
+a{
+    color:grey;
+    cursor: pointer;
+}
+
+a:hover{
+    color:rgb(189, 33, 33);
+}
+
+
+#NR{
+    position: relative;
+    top:20px;
+    left:20px;
+    border:1px solid grey;
+    border-radius: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 20px;
+}
+
+
+#Divide1{
+    position: relative;
+    top:30px; 
+    height:30px;
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.322);
+    border: 1px solid rgba(0, 0, 0, 0.514);
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.616) 1px 1px;   
+}
+
+#Divide2{
+    position: relative;
+    top:230px; 
+    height:30px;
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.322);
+    border: 1px solid rgba(0, 0, 0, 0.514);
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.616) 1px 1px;  
+}
+
+.ComingSoon{
+    color: grey;
+    opacity: 0.1;
+}
+
+.ComingSoon2{
+    color: grey;
+    opacity: 0.1;
+}
+
+.ComingSoon3{
+    color: grey;
+    opacity: 0.1;
+}
+
+.ComingSoon4{
+    color: grey;
+    opacity: 0.1;
+}
+
+.ComingSoon5{
+    color: grey;
+    opacity: 0.1;
+}
+
+#CSText{
+    position: relative;
+    bottom: 800px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+#CSText2{
+    position: relative;
+    bottom: 650px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+#CSText3{
+    position: relative;
+    bottom: 500px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+#CSText4{
+    position: relative;
+    bottom: 350px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+#CSText5{
+    position: relative;
+    bottom: 200px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+#Footer{
+    height: 70px;
+    width:100%;
+    background-color:rgba(214, 25, 25, 0.322);
+    border: 1px solid rgba(0, 0, 0, 0.514);
+    box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+    position: relative;
+    bottom: 170px;
+}
+
+#Date{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+
+
+.Released{
+    cursor:pointer;
+}
+
+#Game1{
+    position: relative;
+    bottom: 100px;
+    display: none;
+    position:absolute;
+transition:opacity 500ms;
+width: 100%;
+border-radius: 10px;
+z-index: 1;
+}
+
+
+
+
+#Game1About{
+    font-family:Courier;
+    color:rgba(247, 242, 242, 0.712); 
+    position: relative;
+    bottom: -50px; 
+    right:20px;
+    text-align: center;
+      
+}
+
+
+#Game1Img{
+    left: -20px;
+    border-radius: 2px;
+    box-shadow: #000 3px 3px;
+    position: relative;
+    bottom: -50px;
+    width: 100%;
+}
+
+/*
+#Close{
+    position: relative;
+    bottom: 360px;
+    left:260px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    color:rgba(250, 6, 6, 0.76); 
+    font-size: 20px; 
+}
+*/
+#AboutPanel{
+    display: none;
+    position: relative;
+    bottom: 1180px;
+    height:350px;
+    width: 100%;
+    background-color:rgba(15, 14, 14, 0.904);
+    margin:auto; 
+    z-index: 1;  
+}
+
+#AboutContent{
+    font-family:Courier;
+    color:rgba(247, 242, 242, 0.712); 
+    font-size: 20px; 
+    text-align: center;
+}
+/*
+#CloseAbout{
+    position: absolute;
+    bottom: 350px;
+    left:260px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    color:rgba(250, 6, 6, 0.76); 
+    font-size: 20px; 
+}
+*/
 
 #ContactPanel{
     display: none;
@@ -716,28 +1290,81 @@ border-radius: 10px;
     z-index: 1;  
 }
 
+/*
 #CloseContact{
     position: absolute;
     bottom: 350px;
-    left:450px;
+    margin-left: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
     color:rgba(250, 6, 6, 0.76); 
     font-size: 20px; 
 }
-
+*/
 #ContactContent{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
-    color:rgba(250, 6, 6, 0.76); 
+    font-family:Courier;
+    color:rgba(247, 242, 242, 0.712);  
     font-size: 20px; 
     text-align: center;
 }
 
+
+#RPI{
+    display: block;
+    position: relative;
+    bottom: 500px;   
 }
+
+
+#Socials{
+    position: relative;
+    top: 280px;     
+}
+
+#FB{
+    width:45px;
+    height: 40px; 
+}
+
+#Insta{
+    position: relative;
+    left: 20px;  
+    width:45px;
+    height:40px;  
+}
+
+#Twitter{
+    position: relative;
+    left: 40px; 
+    width:45px;
+    height:40px;   
+}
+
+#LinkedIn{
+    position: relative;
+    left: 60px;
+    width:45px;
+    height: 40px;    
+}
+
+
+
+
+
+}
+
+
 </style>
 
 <script>
     var CSWClickNo=0;
+    var CClickNo=0;
+    var AClickNo=0;
+    var RClickNo=0;
     var SANDWICH=document.getElementById("Sandwich");
+    var Cont=document.getElementById("Cont");
+
+
+    document.addEventListener("fullscreenchange", ExitHandler);
     window.onload=Loading;
     function Loading(){
         setTimeout(function(){
@@ -764,35 +1391,169 @@ border-radius: 10px;
 
     function OpenGame1(){
             document.getElementById("Game1").style.display="block"; 
+            document.getElementById("MainContBG").style.display="none";
             document.body.style.overflowY="hidden"; 
+if(document.getElementById("Cont").requestFullscreen){
+    document.getElementById("Cont").requestFullscreen();
+}
         }
 
         function CloseGame1(){
+            document.getElementById("RPI").style.width="50px";
+        document.getElementById("RPI").style.height="50px";
             document.body.style.overflowY="scroll";
-            document.getElementById("Game1").style.display="none"; 
+            document.getElementById("Game1").style.display="none";
+            document.getElementById("MainContBG").style.display="block";
+    document.exitFullscreen();
+    document.getElementById("Game1Img").style.height="250px";
+        document.getElementById("Game1About").style.bottom="-50px";
+        document.getElementById("Game1Img").style.bottom="-50px";
+        const color=["rgba(15, 14, 14, 0)"];
+        document.getElementById("Game1About").style.backgroundColor=color;
+            document.getElementById("Game1Img").style.left="-20px";
+            document.getElementById("Game1").style.bottom="100px";
+            document.getElementById("RPI").style.bottom="500px";
+            document.getElementById("RPI").style.width="50px";
+        document.getElementById("RPI").style.height="50px";
+        document.getElementById("Game1About").style.right="20px";
+            screen.orientation.unlock();
+            RClickNo=0;
         }
 
 
+        function ExitHandler(){
+            if(!document.fullscreenElement){
+                CloseGame1();
+            }
+        }
+
+        
+
+function RotatePhone(){
+    if(RClickNo==0){
+        screen.orientation.lock("landscape");
+        document.getElementById("RPI").style.width="30px";
+        document.getElementById("RPI").style.height="30px";
+        document.getElementById("RPI").style.bottom="600px";
+        document.getElementById("Game1Img").style.left="-50px";
+        document.getElementById("Game1").style.bottom="-350px";
+        document.getElementById("Game1Img").style.height="450px";
+        document.getElementById("Game1About").style.bottom="350px";
+        document.getElementById("Game1About").style.right="50px";
+        document.getElementById("Game1Img").style.bottom="50px";
+        const color=["rgba(15, 14, 14, 0.685)"];
+        document.getElementById("Game1About").style.backgroundColor=color;
+        RClickNo++;
+        }else
+        if(RClickNo==1){
+            document.getElementById("Game1About").style.right="20px";
+            document.getElementById("Game1Img").style.height="250px";
+        document.getElementById("Game1About").style.bottom="-50px";
+        document.getElementById("Game1Img").style.bottom="-50px";
+        const color=["rgba(15, 14, 14, 0)"];
+        document.getElementById("Game1About").style.backgroundColor=color;
+            document.getElementById("Game1Img").style.left="-20px";
+            document.getElementById("Game1").style.bottom="100px";
+            document.getElementById("RPI").style.bottom="500px";
+            document.getElementById("RPI").style.width="50px";
+        document.getElementById("RPI").style.height="50px";
+            screen.orientation.unlock();
+            RClickNo=0;
+        }  
+    
+}
+
+
+function Home(){
+    document.body.style.overflowY="scroll";
+    document.getElementById("Home").style.textDecoration="underline";
+                document.getElementById("Home").style.textDecorationColor="grey";
+                document.getElementById("Home").style.textDecorationThickness="3px";
+                document.getElementById("Home").style.color="rgb(189, 33, 33)";
+                document.getElementById("Contact").style.textDecoration="none";
+                document.getElementById("Contact").style.color="grey";
+                document.getElementById("About").style.textDecoration="none";
+                document.getElementById("About").style.color="grey"; 
+                document.getElementById("ContactPanel").style.display="none"; 
+            document.getElementById("AboutPanel").style.display="none";
+            document.getElementById("Home").style.cursor="default";
+            AClickNo=0;
+            CClickNo=0;
+}
+
+
         function OpenAbout(){
+            if(AClickNo==0){
+                CClickNo=0;
+                document.getElementById("About").style.textDecoration="underline";
+                document.getElementById("About").style.textDecorationColor="grey";
+                document.getElementById("About").style.textDecorationThickness="3px";
+                document.getElementById("About").style.color="rgb(189, 33, 33)";
+                document.getElementById("Home").style.textDecoration="none";
+                document.getElementById("Home").style.color="grey";
+                document.getElementById("Contact").style.textDecoration="none";
+                document.getElementById("Contact").style.color="grey";
             document.getElementById("AboutPanel").style.display="block"; 
+            document.getElementById("ContactPanel").style.display="none"; 
+            document.getElementById("Home").style.cursor="pointer";
             document.body.style.overflowY="hidden"; 
+            AClickNo++;
+        }else
+        if(AClickNo==1){
+            CloseAbout();
+            AClickNo=0;
+        }
         }
 
         function CloseAbout(){
             document.body.style.overflowY="scroll";
             document.getElementById("AboutPanel").style.display="none"; 
+            document.getElementById("ContactPanel").style.display="none";
+            document.getElementById("Home").style.textDecoration="underline";
+                document.getElementById("Home").style.textDecorationColor="grey";
+                document.getElementById("Home").style.textDecorationThickness="3px";
+                document.getElementById("Home").style.color="rgb(189, 33, 33)";
+                document.getElementById("About").style.textDecoration="none";
+                document.getElementById("About").style.color="grey"; 
+                document.getElementById("Home").style.cursor="default";
         }
 
 
 
         function OpenContact(){
+            if(CClickNo==0){
+                AClickNo=0;
+                document.getElementById("Contact").style.textDecoration="underline";
+                document.getElementById("Contact").style.textDecorationColor="grey";
+                document.getElementById("Contact").style.textDecorationThickness="3px";
+                document.getElementById("Contact").style.color="rgb(189, 33, 33)";
+                document.getElementById("Home").style.textDecoration="none";
+                document.getElementById("Home").style.color="grey";
+                document.getElementById("About").style.textDecoration="none";
+                document.getElementById("About").style.color="grey";
             document.getElementById("ContactPanel").style.display="block"; 
+            document.getElementById("AboutPanel").style.display="none"; 
+            document.getElementById("Home").style.cursor="pointer"; 
             document.body.style.overflowY="hidden"; 
+            CClickNo++;
+        }else
+        if(CClickNo==1){
+         CloseContact();
+            CClickNo=0;
         }
+    }
 
         function CloseContact(){
             document.body.style.overflowY="scroll";
             document.getElementById("ContactPanel").style.display="none"; 
+            document.getElementById("AboutPanel").style.display="none";
+            document.getElementById("Home").style.textDecoration="underline";
+                document.getElementById("Home").style.textDecorationColor="grey";
+                document.getElementById("Home").style.textDecorationThickness="3px";
+                document.getElementById("Home").style.color="rgb(189, 33, 33)";
+                document.getElementById("Contact").style.textDecoration="none";
+                document.getElementById("Contact").style.color="grey";
+                document.getElementById("Home").style.cursor="default";
         }
     </script>
 </head>
@@ -800,16 +1561,20 @@ border-radius: 10px;
     <div id="Loader"><center><b id="LOADTEXT">LOADING...</b><!---<img src="./images/Loader.png"  width="500px" height="500px"/>---></center></div>
     <div id="Cont">
         <div id="MainCont">
+            <div id="MainContBG">
        <div id="Logo"> <img src="./images/Immunocalypse-icon.png"  width="80px" height="80px"/><div id="LogoText"><h1>IMMUNOWRLD</h1></div></div> 
-    <div id="TopBar"><div id="Sandwich" onclick="ClickOnSandWich()" ><img id="SW" src="./images/Sandwich.png" height="30px" width="40px"/></div>
+    <div id="TopBar"><div id="Sandwich"><img  onclick="ClickOnSandWich()"  id="SW" src="./images/Sandwich.png" height="30px" width="40px"/></div>
     <div id="Links">
-    <h3 id="Home"><a href="">HOME</a></h3>
-    <h3 id="About"><a onclick="OpenAbout()">ABOUT</a></h3>
-    <h3 id="Contact"><a onclick="OpenContact()">CONTACT</a></h3>
+    <h3><a id="Home" onclick="Home()">HOME</a></h3>
+    <h3><a id="About" onclick="OpenAbout()">ABOUT</a></h3>
+    <h3><a id="Contact" onclick="OpenContact()">CONTACT</a></h3>
     </div>
 </div>
     <div id="SideBar"><a id="NR" href="NextRelease.html"><b>NEXT RELEASE</b></a><br/>
-        <div id="Divide1"><h1><b>---------------------</b></h1></div></div>
+        <div id="Divide1"></div>
+        <div id="Divide2"></div>
+        <div id="Socials"><img  onclick="ClickOnSandWich()"  id="FB" src="./images/Fb.png" height="60px" width="70px"/><img  onclick="ClickOnSandWich()"  id="Insta" src="./images/Insta.png" height="60px" width="70px"/><img  onclick="ClickOnSandWich()"  id="Twitter" src="./images/Twitter.png" height="60px" width="70px"/><img  onclick="ClickOnSandWich()"  id="LinkedIn" src="./images/LinkedIn.png" height="60px" width="70px"/></div>
+        </div>
     <div id="Overlay"><img class="Released" id="Gallary" onclick="OpenGame1()" src="./images/GameName.png"  width="200px" height="150px"/> 
         <img class="ComingSoon" id="Gallary" src="./images/Gallary.png"  width="200px" height="150px"/>
         <img class="ComingSoon2" id="Gallary" src="./images/Gallary2.png"  width="200px" height="150px"/>
@@ -821,11 +1586,10 @@ border-radius: 10px;
         <h1 id="CSText3">COMING SOON</h1>
         <h1 id="CSText4">COMING SOON</h1>
         <h1 id="CSText5">COMING SOON</h1>
-        <div id="Game1"><img id="Game1Img" src="./images/GameName.png"  width="100%" height="300px"/><p id="Game1About"><b>Immunocalypse is an FPS game</b></p><p onclick="CloseGame1()" id="Close"><b>X</b></p></div>
         <div id="Footer"><p id="Date"><b>©2020 - 2022</b></p></div>
 </div>
-<div id="ContactPanel"><p onclick="CloseContact()" id="CloseContact"><b>X</b></p><p id="ContactContent">Phone No: 09016482578<br/><br/><b>SOCIAL MEDIA:</b><br/>Twitter: @Philip_nzube<br/><br/>Whatsapp: 09029751915<br/><br/>Instagram: philinstadev<br/><br/>Facebook: Philip Nzubechukwu</p></div>
-<div id="AboutPanel"><p onclick="CloseAbout()" id="CloseAbout"><b>X</b></p></div>
+<div id="ContactPanel"><!---<p onclick="CloseContact()" id="CloseContact"><b>X</b></p>---><p id="ContactContent"><br/><br/>Phone No: 09016482578<br/><br/><b>SOCIAL MEDIA:</b><br/>Twitter: @Philip_nzube<br/><br/>Whatsapp: 09029751915<br/><br/>Instagram: philinstadev<br/><br/>Facebook: Philip Nzubechukwu</p></div>
+<div id="AboutPanel"><p id="AboutContent"><br/><br/><br/><br/><br/><b>This is where you can find all the games by Onwubalili Philip Nzube.<br/>All IMMUNOWRLD games are connected.  </b></p></div>
     <!---<div id="LArrow"><img src="./images/LeftArrow.png"  width="40px" height="60px"/></div>
     <div id="RArrow"><img src="./images/RightArrow.png"  width="40px" height="60px"/></div>
     <div id="Dots"><img id="Dot1" src="./images/Dot.png"  width="20px" height="20px"/>
@@ -833,6 +1597,10 @@ border-radius: 10px;
         <img id="Dot3" src="./images/Dot.png"  width="20px" height="20px"/>
     </div>--->
     </div>
+    <div id="Game1"><img onclick="CloseGame1()" id="Game1Img" src="./images/GameName.png"  width="90%" height="250px" title="CLICK/TAP TO CLOSE"/>
+        <p id="Game1About"><b>Immunocalypse-Deadly Tour is an FPS co-op multiplayer game. <br/>Its been six years since IMMUNO city was destroyed after it was attacked by creatures.
+            <br/>A super soldier from the S.I.E.G.E program has been given a mission to rescue some soldiers who are being attacked by creatures who attacked IMMUNO city years ago while uncovering the truth about what truly happened at IMMUNO city and the secrets the N.G.O. has been hiding.<br/><a style="font-weight: bold;color:rgb(0, 255, 42)" href="">-DOWNLOAD THE GAME ON PLAYSTORE-</a> </b></p><img onclick="RotatePhone()" id="RPI" src="images/RotatePhoneImg.png" width="50px" height="50px"/><!---CloseGame1()" id="Close"><b>X</b></p>--></div>
+</div>
     </div>
     
 </body>
