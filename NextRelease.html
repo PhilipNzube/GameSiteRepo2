@@ -303,7 +303,6 @@ text-decoration:none;
 border-radius:30px;
 padding:10px;
 box-shadow:0 0 10px #aaa;
-display:none;
 }
 #SubmitBG2{
 width:290px;
@@ -1285,7 +1284,7 @@ text-decoration:none;
 border-radius:30px;
 padding:10px;
 box-shadow:0 0 10px #aaa;
-display:none;
+
 }
 #SubmitBG2{
 width:125px;
@@ -1382,7 +1381,6 @@ font-size:10px;
 
 #ResetButton{
   bottom: 10px;;
-  display: none;
 padding:10px;
 background:rgb(255, 0, 0);
 border-radius:30px;
@@ -1871,6 +1869,8 @@ window.onload=Load;
  Visible=JSON.parse(localStorage.getItem("Visible"));
  if(Visible==false){
  document.getElementById("GenerateButBG").style.display="none";
+ document.getElementById("SubmitBG").style.display="block";
+  document.getElementById("ResetButton").style.display="block";
  //document.getElementById("SubmitBG").style.display="block";
  }
  if(JSON.parse(localStorage.getItem("FirstTime"))!=false){
@@ -1878,10 +1878,12 @@ window.onload=Load;
  localStorage.setItem("FirstTime",true);
  console.log("CIDNotVisible");
  }else if(JSON.parse(localStorage.getItem("FirstTime"))==true){
+  
   //localStorage.setItem("FirstTime",true); 
  }
  var FirstTime=JSON.parse(localStorage.getItem("FirstTime"));
 if(FirstTime==false){
+  
   //localStorage.setItem("FirstTime",true)
  //document.getElementById("ConfirmationcodeID").style.display="block";
 //document.getElementById("ConfirmButBG").style.display="block";
@@ -1922,6 +1924,9 @@ var Expired29=localStorage.setItem("Expired29", false);
 var Expired30=localStorage.setItem("Expired30", false);
 console.log("FirstTime");
 document.getElementById("GenerateButBG").style.display="block";
+document.getElementById("SubmitBG").style.display="none";
+  document.getElementById("ResetButton").style.display="none";
+
 }
  //typeWriter();
   LoadBox();
